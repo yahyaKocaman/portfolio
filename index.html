@@ -27,7 +27,7 @@
             width: 100%;
             background: rgba(10, 14, 39, 0.98);
             backdrop-filter: blur(10px);
-            padding: 1.2rem 8%;
+            padding: 1.2rem 2%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -40,14 +40,18 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-right: auto;
         }
         
         .logo-image {
-            height: 45px;
-            width: 45px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 2px solid rgba(59, 130, 246, 0.3);
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo-image svg {
+            height: 60px;
+            width: auto;
         }
         
         .logo {
@@ -97,12 +101,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
             color: white;
             text-align: center;
             padding: 2rem;
             position: relative;
             overflow: hidden;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(49, 46, 129, 0.85) 100%);
+            z-index: 1;
         }
         
         .hero::before {
@@ -113,12 +137,13 @@
             right: 0;
             bottom: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(59,130,246,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') bottom/cover no-repeat;
+            z-index: 2;
         }
         
         .hero-content {
             max-width: 900px;
             position: relative;
-            z-index: 1;
+            z-index: 3;
         }
         
         .hero-subtitle {
@@ -244,15 +269,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
         }
         
         .about-image img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             object-position: center;
             display: block;
         }
@@ -363,7 +385,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
         }
         
         .project-image::before {
@@ -379,11 +400,9 @@
         }
         
         .project-image img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             object-position: center;
             display: block;
             position: relative;
@@ -653,7 +672,17 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/logo.png" alt="Logo" class="logo-image">
+            <!-- SVG Logo buraya eklenecek -->
+            <svg class="logo-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" opacity="0.2"/>
+                <text x="50" y="65" font-family="Arial, sans-serif" font-size="45" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle">YK</text>
+            </svg>
             <div class="logo">YK</div>
         </div>
         <ul class="nav-links">
@@ -668,6 +697,13 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <!-- Video Background  -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/videos/background.mp4" type="video/mp4">
+            <!-- Alternatif video formatları -->
+            <source src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/videos/background.webm" type="video/webm">
+        </video>
+        
         <div class="hero-content">
             <div class="hero-subtitle">YOUR IDEAS, MY EXPERTISE, ENDLESS POSSIBILITIES</div>
             <h1>Yahya Kocaman</h1>
