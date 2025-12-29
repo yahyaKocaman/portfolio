@@ -229,6 +229,18 @@
             justify-content: center;
             font-size: 10rem;
             box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3);
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        
+        .about-image i {
+            font-size: 10rem;
         }
         
         /* Experience Section */
@@ -333,6 +345,18 @@
             color: white;
             position: relative;
             overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-image i {
+            font-size: 4rem;
+            position: relative;
+            z-index: 2;
         }
         
         .project-image::before {
@@ -634,7 +658,7 @@
                 <p>I am curious, love to create, and have an entrepreneurial mindset. My goal is to become a strong software developer in my field through continuous learning, adding value to real problems with the artificial intelligence solutions I develop.</p>
             </div>
             <div class="about-image">
-               <img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/profile1.png" alt="Yahya Kocaman">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/profile1.png" alt="Yahya Kocaman" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
             </div>
         </div>
     </section>
@@ -691,7 +715,9 @@
         <h2 class="section-title">PROJECTS</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image"><img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/Project1.png" alt="AI Chatbot"></i></div>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project1.png" alt="AI Chatbot" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">AI Consultant Chatbot</h3>
                     <p class="project-desc">An AI-powered consulting chatbot. Understands user questions with natural language processing and generates appropriate responses.</p>
@@ -701,13 +727,15 @@
                         <span class="project-tag">NLP</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman/ai_consultant_chatbot" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-image"><img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/Project2.jpg" alt="AI Chatbot"></i></div>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project2.jpg" alt="MusicCreatorAI" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">MusicCreatorAI</h3>
                     <p class="project-desc">A deep learning-based music generation application with time-stretching and pitch shifting features.</p>
@@ -717,13 +745,15 @@
                         <span class="project-tag">PyQt5</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman/MusicCreatorAi" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-image"><img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/Project3.jpg" alt="AI Chatbot"></i></div>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project3.jpg" alt="Travel Guide" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Travel Guide</h3>
                     <p class="project-desc">A comprehensive travel guide app for Turkey with Google Maps, Street View integration, and weather display.</p>
@@ -733,13 +763,15 @@
                         <span class="project-tag">Google Maps API</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman/Travel_Guide" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-image"><img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/Project4.jpeg" alt="AI Chatbot"></i></div>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project4.jpeg" alt="Web3 Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Web3 Crowdfunding Platform</h3>
                     <p class="project-desc">A blockchain-based crowdfunding platform where users can create and finance projects.</p>
@@ -749,13 +781,15 @@
                         <span class="project-tag">Blockchain</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman/Web3_Blokchain_crowdfunding_platform" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-image"><img src="https://github.com/yahyaKocaman/portfolio/blob/main/images/Project5.png" alt="AI Chatbot"></i></div>
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project5.png" alt="RecipeApp" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">RecipeApp</h3>
                     <p class="project-desc">An Android app that offers random recipe suggestions based on available ingredients using SQLite.</p>
@@ -765,7 +799,7 @@
                         <span class="project-tag">SQLite</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman/RecipeApp" class="project-link" target="_blank">View Code</a>
+                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
