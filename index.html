@@ -44,15 +44,10 @@
         }
         
         .logo-image {
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: auto;
             object-fit: contain;
             filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
-        }
-        
-        .logo-image svg {
-            height: 60px;
-            width: 60px;
         }
         
         .logo {
@@ -277,12 +272,6 @@
             display: block;
         }
         
-        .about-image i {
-            font-size: 10rem;
-            color: white;
-            position: absolute;
-        }
-        
         /* Experience Section */
         .experience-grid {
             display: grid;
@@ -397,21 +386,12 @@
         .project-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
             display: block;
             position: relative;
             z-index: 2;
-        }
-        
-        .project-image i {
-            font-size: 4rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            z-index: 2;
+            padding: 1rem;
         }
         
         @keyframes rotate {
@@ -667,17 +647,8 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <!-- SVG Logo buraya eklenecek -->
-            <svg class="logo-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" opacity="0.2"/>
-                <text x="50" y="65" font-family="Arial, sans-serif" font-size="45" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle">YK</text>
-            </svg>
+            <!-- PNG Logo - Kendi logo dosyanızın yolunu buraya ekleyin -->
+            <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/logo.png" alt="YK Logo" class="logo-image">
             <div class="logo">YK</div>
         </div>
         <ul class="nav-links">
@@ -692,10 +663,8 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <!-- Video Background - Buraya kendi video URL'nizi ekleyin -->
         <video class="hero-video" autoplay muted loop playsinline>
             <source src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/videos/background.mp4" type="video/mp4">
-            <!-- Alternatif video formatları -->
             <source src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/videos/background.webm" type="video/webm">
         </video>
         
