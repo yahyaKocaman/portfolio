@@ -12,12 +12,20 @@
             box-sizing: border-box;
         }
         
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             line-height: 1.6;
             color: #e0e0e0;
             background: #0a0e27;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
         }
         
         /* Navbar */
@@ -248,6 +256,9 @@
         /* Section Styles */
         section {
             padding: 6rem 5%;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
         
         .section-title {
@@ -523,6 +534,8 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             transition: all 0.3s;
             border: 2px solid rgba(59, 130, 246, 0.2);
+            overflow: hidden;
+            word-wrap: break-word;
         }
         
         .skill-card:hover {
@@ -539,13 +552,15 @@
         .skill-name {
             font-weight: 600;
             margin-bottom: 0.5rem;
-            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            font-size: clamp(0.85rem, 1.5vw, 1.1rem);
             color: #fff;
+            word-break: break-word;
+            hyphens: auto;
         }
         
         .skill-level {
             color: #3b82f6;
-            font-size: 0.9rem;
+            font-size: clamp(0.75rem, 1.2vw, 0.9rem);
             font-weight: 500;
         }
         
@@ -762,8 +777,25 @@
             }
             
             .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                gap: 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 1.2rem;
+            }
+            
+            .skill-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .skill-icon {
+                font-size: 2.2rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .skill-name {
+                font-size: 0.8rem;
+            }
+            
+            .skill-level {
+                font-size: 0.7rem;
             }
             
             .social-links a {
@@ -797,7 +829,25 @@
             }
             
             .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+                gap: 1rem;
+            }
+            
+            .skill-card {
+                padding: 1.2rem 0.8rem;
+            }
+            
+            .skill-icon {
+                font-size: 2rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            .skill-name {
+                font-size: 0.7rem;
+            }
+            
+            .skill-level {
+                font-size: 0.65rem;
             }
         }
     </style>
@@ -879,346 +929,339 @@
             </div>
 
             <div class="experience-card">
-                <div class="experience-<function_calls>
-                <invoke name="artifacts">
-                <parameter name="command">update</parameter>
-                <parameter name="id">artifact_1</parameter>
-                <parameter name="old_str">            <div class="experience-card">
-                <div class="experience-</parameter>
-                <parameter name="new_str">            <div class="experience-card">
                 <div class="experience-header">
-                <div>
-                <div class="experience-title">Software Developer</div>
-                <div class="experience-company">OKATAN SAĞLIK ARGE</div>
-                </div>
-                <div class="experience-date">September 2024 - October 2024</div>
+                    <div>
+                        <div class="experience-title">Software Developer</div>
+                        <div class="experience-company">OKATAN SAĞLIK ARGE</div>
+                    </div>
+                    <div class="experience-date">September 2024 - October 2024</div>
                 </div>
                 <ul class="experience-desc">
-                <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
+                    <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
                 </ul>
-                </div>
-                <div class="experience-card">
-            <div class="experience-header">
-                <div>
-                    <div class="experience-title">Intern & Project Manager</div>
-                    <div class="experience-company">KAWIENAI</div>
-                </div>
-                <div class="experience-date">June 2024 - August 2024</div>
             </div>
-            <ul class="experience-desc">
-                <li>Participated in software development and project management processes.</li>
-                <li>Gained experience in team coordination and project tracking.</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2 class="section-title">PROJECTS</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <div class="project-image">
-                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project1.png" alt="AI Chatbot">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">AI Consultant Chatbot</h3>
-                <p class="project-desc">An AI-powered consulting chatbot. Understands user questions with natural language processing and generates appropriate responses.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Python</span>
-                    <span class="project-tag">TensorFlow</span>
-                    <span class="project-tag">NLP</span>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Intern & Project Manager</div>
+                        <div class="experience-company">KAWIENAI</div>
+                    </div>
+                    <div class="experience-date">June 2024 - August 2024</div>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/yahyaKocaman/ai_consultant_chatbot" class="project-link" target="_blank">View Code</a>
-                </div>
+                <ul class="experience-desc">
+                    <li>Participated in software development and project management processes.</li>
+                    <li>Gained experience in team coordination and project tracking.</li>
+                </ul>
             </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <div class="project-image">
-                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project2.jpg" alt="MusicCreatorAI">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">MusicCreatorAI</h3>
-                <p class="project-desc">A deep learning-based music generation application with time-stretching and pitch shifting features.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Python</span>
-                    <span class="project-tag">TensorFlow</span>
-                    <span class="project-tag">PyQt5</span>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project1.png" alt="AI Chatbot">
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/yahyaKocaman/MusicCreatorAi" class="project-link" target="_blank">View Code</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-image">
-                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project3.jpg" alt="Travel Guide">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Travel Guide</h3>
-                <p class="project-desc">A comprehensive travel guide app for Turkey with Google Maps, Street View integration, and weather display.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Android</span>
-                    <span class="project-tag">Java</span>
-                    <span class="project-tag">Google Maps API</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/yahyaKocaman/Travel_Guide" class="project-link" target="_blank">View Code</a>
+                <div class="project-content">
+                    <h3 class="project-title">AI Consultant Chatbot</h3>
+                    <p class="project-desc">An AI-powered consulting chatbot. Understands user questions with natural language processing and generates appropriate responses.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">TensorFlow</span>
+                        <span class="project-tag">NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yahyaKocaman/ai_consultant_chatbot" class="project-link" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-image">
-                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project4.jpeg" alt="Web3 Platform">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">Web3 Crowdfunding Platform</h3>
-                <p class="project-desc">A blockchain-based crowdfunding platform where users can create and finance projects.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Rust</span>
-                    <span class="project-tag">Soroban SDK</span>
-                    <span class="project-tag">Blockchain</span>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project2.jpg" alt="MusicCreatorAI">
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/yahyaKocaman/Web3_Blokchain_crowdfunding_platform" class="project-link" target="_blank">View Code</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-image">
-                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project5.png" alt="RecipeApp">
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">RecipeApp</h3>
-                <p class="project-desc">An Android app that offers random recipe suggestions based on available ingredients using SQLite.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Kotlin</span>
-                    <span class="project-tag">Android</span>
-                    <span class="project-tag">SQLite</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/yahyaKocaman/RecipeApp" class="project-link" target="_blank">View Code</a>
+                <div class="project-content">
+                    <h3 class="project-title">MusicCreatorAI</h3>
+                    <p class="project-desc">A deep learning-based music generation application with time-stretching and pitch shifting features.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">TensorFlow</span>
+                        <span class="project-tag">PyQt5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yahyaKocaman/MusicCreatorAi" class="project-link" target="_blank">View Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills">
-    <h2 class="section-title">SKILLS</h2>
-    <p class="skills-intro">The Skills, Tools and Technologies I am really good at:</p>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-python"></i></div>
-            <div class="skill-name">PYTHON</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-c"></i></div>
-            <div class="skill-name">C</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-java"></i></div>
-            <div class="skill-name">JAVA</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-brain"></i></div>
-            <div class="skill-name">TENSORFLOW</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-fire"></i></div>
-            <div class="skill-name">PYTORCH</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-android"></i></div>
-            <div class="skill-name">ANDROID</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-            <div class="skill-name">HTML5</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-            <div class="skill-name">CSS3</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-js"></i></div>
-            <div class="skill-name">JAVASCRIPT</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-php"></i></div>
-            <div class="skill-name">PHP</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <div class="skill-name">SQL</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-cog"></i></div>
-            <div class="skill-name">RUST</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-code"></i></div>
-            <div class="skill-name">KOTLIN</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-cubes"></i></div>
-            <div class="skill-name">BLOCKCHAIN</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-flask"></i></div>
-            <div class="skill-name">FLASK</div>
-            <div class="skill-level">(INTERMEDIATE)</div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-            <div class="skill-name">GIT</div>
-            <div class="skill-level">(ADVANCED)</div>
-        </div>
-    </div>
-</section>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project3.jpg" alt="Travel Guide">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Travel Guide</h3>
+                    <p class="project-desc">A comprehensive travel guide app for Turkey with Google Maps, Street View integration, and weather display.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Android</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Google Maps API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yahyaKocaman/Travel_Guide" class="project-link" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- Education Section -->
-<section id="education">
-    <h2 class="section-title">EDUCATION</h2>
-    <div class="education-card">
-        <div class="education-degree">Bachelor's Degree</div>
-        <div class="education-date">2021 - 2026</div>
-        <div class="education-school">Software Development - Istanbul Aydın University</div>
-        <div class="education-language">
-            <strong>Language:</strong> English - Professional Working Proficiency
-        </div>
-    </div>
-</section>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project4.jpeg" alt="Web3 Platform">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Web3 Crowdfunding Platform</h3>
+                    <p class="project-desc">A blockchain-based crowdfunding platform where users can create and finance projects.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Rust</span>
+                        <span class="project-tag">Soroban SDK</span>
+                        <span class="project-tag">Blockchain</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yahyaKocaman/Web3_Blokchain_crowdfunding_platform" class="project-link" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Istanbul, Turkey</p>
-            <a href="tel:+905516945858">+90 551 694 58 58</a>
-            <a href="mailto:yahyakocaman28@gmail.com">yahyakocaman28@gmail.com</a>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project5.png" alt="RecipeApp">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">RecipeApp</h3>
+                    <p class="project-desc">An Android app that offers random recipe suggestions based on available ingredients using SQLite.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Kotlin</span>
+                        <span class="project-tag">Android</span>
+                        <span class="project-tag">SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yahyaKocaman/RecipeApp" class="project-link" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3>Social Media</h3>
-            <a href="https://github.com/yahyaKocaman" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yahya-kocaman-70b8b3246" target="_blank">LinkedIn</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <p class="skills-intro">The Skills, Tools and Technologies I am really good at:</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-name">PYTHON</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-c"></i></div>
+                <div class="skill-name">C</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <div class="skill-name">JAVA</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <div class="skill-name">TENSORFLOW</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                <div class="skill-name">PYTORCH</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-android"></i></div>
+                <div class="skill-name">ANDROID</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <div class="skill-name">JAVASCRIPT</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-php"></i></div>
+                <div class="skill-name">PHP</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-name">SQL</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cog"></i></div>
+                <div class="skill-name">RUST</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <div class="skill-name">KOTLIN</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                <div class="skill-name">BLOCKCHAIN</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                <div class="skill-name">FLASK</div>
+                <div class="skill-level">(INTERMEDIATE)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="skill-name">GIT</div>
+                <div class="skill-level">(ADVANCED)</div>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="education-card">
+            <div class="education-degree">Bachelor's Degree</div>
+            <div class="education-date">2021 - 2026</div>
+            <div class="education-school">Software Development - Istanbul Aydın University</div>
+            <div class="education-language">
+                <strong>Language:</strong> English - Professional Working Proficiency
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2025 Yahya Kocaman - All Rights Reserved</p>
-    </div>
-</footer>
+    </section>
 
-<script>
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const navLinks = document.getElementById('navLinks');
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Istanbul, Turkey</p>
+                <a href="tel:+905516945858">+90 551 694 58 58</a>
+                <a href="mailto:yahyakocaman28@gmail.com">yahyakocaman28@gmail.com</a>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <a href="https://github.com/yahyaKocaman" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yahya-kocaman-70b8b3246" target="_blank">LinkedIn</a>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#about">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Yahya Kocaman - All Rights Reserved</p>
+        </div>
+    </footer>
 
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenuBtn.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
 
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenuBtn.classList.remove('active');
-            navLinks.classList.remove('active');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
         });
-    });
 
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.style.boxShadow = '0 5px 30px rgba(59, 130, 246, 0.3)';
+            } else {
+                navbar.style.boxShadow = '0 2px 20px rgba(59, 130, 246, 0.2)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Video autoplay fix for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.hero-video');
+            if (video) {
+                video.style.display = 'block';
+                video.style.opacity = '1';
+                
+                const playVideo = () => {
+                    video.play().then(() => {
+                        console.log('Video playing successfully');
+                    }).catch(error => {
+                        console.log('Video autoplay issue:', error);
+                        video.muted = true;
+                        video.play().catch(e => console.log('Muted play also failed:', e));
+                    });
+                };
+                
+                playVideo();
+                
+                const startVideo = () => {
+                    if (video.paused) {
+                        playVideo();
+                    }
+                };
+                
+                document.addEventListener('touchstart', startVideo, { once: true });
+                document.addEventListener('click', startVideo, { once: true });
+                
+                video.addEventListener('ended', function() {
+                    this.currentTime = 0;
+                    this.play();
                 });
             }
         });
-    });
-
-    // Navbar scroll effect
-    let lastScroll = 0;
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
-            navbar.style.boxShadow = '0 5px 30px rgba(59, 130, 246, 0.3)';
-        } else {
-            navbar.style.boxShadow = '0 2px 20px rgba(59, 130, 246, 0.2)';
-        }
-        
-        lastScroll = currentScroll;
-    });
-
-    // Video autoplay fix for mobile
-    document.addEventListener('DOMContentLoaded', function() {
-        const video = document.querySelector('.hero-video');
-        if (video) {
-            video.style.display = 'block';
-            video.style.opacity = '1';
-            
-            const playVideo = () => {
-                video.play().then(() => {
-                    console.log('Video playing successfully');
-                }).catch(error => {
-                    console.log('Video autoplay issue:', error);
-                    video.muted = true;
-                    video.play().catch(e => console.log('Muted play also failed:', e));
-                });
-            };
-            
-            playVideo();
-            
-            const startVideo = () => {
-                if (video.paused) {
-                    playVideo();
-                }
-            };
-            
-            document.addEventListener('touchstart', startVideo, { once: true });
-            document.addEventListener('click', startVideo, { once: true });
-            
-            video.addEventListener('ended', function() {
-                this.currentTime = 0;
-                this.play();
-            });
-        }
-    });
-</script>
+    </script>
 </body>
 </html>
-</parameter>
