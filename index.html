@@ -140,6 +140,14 @@
             transform: translate(-50%, -50%);
             object-fit: cover;
             z-index: 0;
+            pointer-events: none;
+        }
+        
+        /* Safari için video fix */
+        @supports (-webkit-appearance: none) {
+            .hero-video {
+                -webkit-transform: translate(-50%, -50%);
+            }
         }
         
         /* Fallback için gradient background */
@@ -734,7 +742,11 @@
             }
             
             .about-image {
-                height: 700px;
+                height: 550px;
+            }
+            
+            .hero-video {
+                display: block;
             }
             
             section {
@@ -772,7 +784,7 @@
             }
             
             .about-image {
-                height: 300px;
+                height: 350px;
             }
             
             .experience-card,
@@ -867,25 +879,24 @@
             </div>
 
             <div class="experience-card">
+                <div class="experience-<function_calls>
+                <invoke name="artifacts">
+                <parameter name="command">update</parameter>
+                <parameter name="id">artifact_1</parameter>
+                <parameter name="old_str">            <div class="experience-card">
+                <div class="experience-</parameter>
+                <parameter name="new_str">            <div class="experience-card">
                 <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Software Developer</div>
-                        <div class="experience-company">OKATAN SAĞLIK ARGE</div>
-                    </div>
-                    <div class="experience-date">September 2024 - October 2024</div>
-                </div
-                    <function_calls>
-                    <invoke name="artifacts">
-                    <parameter name="command">update</parameter>
-                    <parameter name="id">artifact_1</parameter>
-                    <parameter name="old_str">                    <div class="experience-date">September 2024 - October 2024</div>
-                    </div</parameter>
-                    <parameter name="new_str">                    <div class="experience-date">September 2024 - October 2024</div>
-                    </div>
-                    <ul class="experience-desc">
-                    <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
-              </ul>
-           </div>
+                <div>
+                <div class="experience-title">Software Developer</div>
+                <div class="experience-company">OKATAN SAĞLIK ARGE</div>
+                </div>
+                <div class="experience-date">September 2024 - October 2024</div>
+                </div>
+                <ul class="experience-desc">
+                <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
+                </ul>
+                </div>
                 <div class="experience-card">
             <div class="experience-header">
                 <div>
@@ -1177,27 +1188,37 @@
     document.addEventListener('DOMContentLoaded', function() {
         const video = document.querySelector('.hero-video');
         if (video) {
-            // Try to play the video
-            const playPromise = video.play();
+            video.style.display = 'block';
+            video.style.opacity = '1';
             
-            if (playPromise !== undefined) {
-                playPromise.catch(error => {
-                    // Auto-play was prevented, show fallback background
-                    console.log('Video autoplay prevented:', error);
-                    video.style.display = 'none';
+            const playVideo = () => {
+                video.play().then(() => {
+                    console.log('Video playing successfully');
+                }).catch(error => {
+                    console.log('Video autoplay issue:', error);
+                    video.muted = true;
+                    video.play().catch(e => console.log('Muted play also failed:', e));
                 });
-            }
+            };
             
-            // Ensure video plays on user interaction for mobile
-            document.addEventListener('touchstart', function() {
+            playVideo();
+            
+            const startVideo = () => {
                 if (video.paused) {
-                    video.play().catch(e => console.log('Play failed:', e));
+                    playVideo();
                 }
-            }, { once: true });
+            };
+            
+            document.addEventListener('touchstart', startVideo, { once: true });
+            document.addEventListener('click', startVideo, { once: true });
+            
+            video.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            });
         }
     });
-        </script>
-    </body>
-    </html>
+</script>
+</body>
+</html>
 </parameter>
-</invoke>
