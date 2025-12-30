@@ -27,13 +27,14 @@
             width: 100%;
             background: rgba(10, 14, 39, 0.98);
             backdrop-filter: blur(10px);
-            padding: 1rem 5%;
+            padding: 0.5rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(59, 130, 246, 0.2);
             border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+            height: 70px;
         }
         
         .logo-container {
@@ -44,7 +45,7 @@
         }
         
         .logo-image {
-            height: 180px;
+            height: 50px;
             width: auto;
             object-fit: contain;
             filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
@@ -56,7 +57,7 @@
         }
         
         .logo {
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #fff;
             letter-spacing: -1px;
@@ -65,14 +66,14 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 2rem;
         }
         
         .nav-links a {
             text-decoration: none;
             color: #e0e0e0;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: color 0.3s;
             position: relative;
         }
@@ -646,11 +647,12 @@
         /* Tablet Responsive */
         @media (max-width: 1024px) {
             .navbar {
-                padding: 1rem 4%;
+                padding: 0.5rem 4%;
+                height: 60px;
             }
             
             .logo-image {
-                height: 140px;
+                height: 45px;
             }
             
             .nav-links {
@@ -673,23 +675,24 @@
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .navbar {
-                padding: 0.8rem 4%;
+                padding: 0.5rem 4%;
+                height: 60px;
             }
             
             .logo-image {
-                height: 80px;
+                height: 40px;
             }
             
             .logo {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
             .nav-links {
                 position: fixed;
-                top: 100px;
+                top: 60px;
                 left: -100%;
                 width: 100%;
-                height: calc(100vh - 100px);
+                height: calc(100vh - 60px);
                 background: rgba(10, 14, 39, 0.98);
                 backdrop-filter: blur(10px);
                 flex-direction: column;
@@ -757,11 +760,11 @@
         /* Small Mobile */
         @media (max-width: 480px) {
             .logo-image {
-                height: 60px;
+                height: 35px;
             }
             
             .logo {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             
             .about-image {
@@ -868,320 +871,327 @@
                     <div class="experience-date">September 2024 - October 2024</div>
                 </div>
                 <ul class="experience-desc">
+                    <li>Participated in in-house software<function_calls>
+                    <invoke name="artifacts">
+                    <parameter name="command">update</parameter>
+                    <parameter name="id">artifact_1</parameter>
+                    <parameter name="old_str">                <ul class="experience-desc">
+                    <li>Participated in in-house software</parameter>
+                    <parameter name="new_str">                <ul class="experience-desc">
                     <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Intern & Project Manager</div>
-                        <div class="experience-company">KAWIENAI</div>
+                    </ul>
                     </div>
-                    <div class="experience-date">June 2024 - August 2024</div>
+                        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <div class="experience-title">Intern & Project Manager</div>
+                    <div class="experience-company">KAWIENAI</div>
                 </div>
-                <ul class="experience-desc">
-                    <li>Participated in software development and project management processes.</li>
-                    <li>Gained experience in team coordination and project tracking.</li>
-                </ul>
+                <div class="experience-date">June 2024 - August 2024</div>
             </div>
+            <ul class="experience-desc">
+                <li>Participated in software development and project management processes.</li>
+                <li>Gained experience in team coordination and project tracking.</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">PROJECTS</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project1.png" alt="AI Chatbot">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">AI Consultant Chatbot</h3>
-                    <p class="project-desc">An AI-powered consulting chatbot. Understands user questions with natural language processing and generates appropriate responses.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">TensorFlow</span>
-                        <span class="project-tag">NLP</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
+<!-- Projects Section -->
+<section id="projects">
+    <h2 class="section-title">PROJECTS</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project1.png" alt="AI Chatbot">
             </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project2.jpg" alt="MusicCreatorAI">
+            <div class="project-content">
+                <h3 class="project-title">AI Consultant Chatbot</h3>
+                <p class="project-desc">An AI-powered consulting chatbot. Understands user questions with natural language processing and generates appropriate responses.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">TensorFlow</span>
+                    <span class="project-tag">NLP</span>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">MusicCreatorAI</h3>
-                    <p class="project-desc">A deep learning-based music generation application with time-stretching and pitch shifting features.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">TensorFlow</span>
-                        <span class="project-tag">PyQt5</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project3.jpg" alt="Travel Guide">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Travel Guide</h3>
-                    <p class="project-desc">A comprehensive travel guide app for Turkey with Google Maps, Street View integration, and weather display.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Android</span>
-                        <span class="project-tag">Java</span>
-                        <span class="project-tag">Google Maps API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project4.jpeg" alt="Web3 Platform">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Web3 Crowdfunding Platform</h3>
-                    <p class="project-desc">A blockchain-based crowdfunding platform where users can create and finance projects.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Rust</span>
-                        <span class="project-tag">Soroban SDK</span>
-                        <span class="project-tag">Blockchain</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project5.png" alt="RecipeApp">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">RecipeApp</h3>
-                    <p class="project-desc">An Android app that offers random recipe suggestions based on available ingredients using SQLite.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Kotlin</span>
-                        <span class="project-tag">Android</span>
-                        <span class="project-tag">SQLite</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
-                    </div>
+                <div class="project-links">
+                    <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">SKILLS</h2>
-        <p class="skills-intro">The Skills, Tools and Technologies I am really good at:</p>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-python"></i></div>
-                <div class="skill-name">PYTHON</div>
-                <div class="skill-level">(ADVANCED)</div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project2.jpg" alt="MusicCreatorAI">
             </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-c"></i></div>
-                <div class="skill-name">C</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-java"></i></div>
-                <div class="skill-name">JAVA</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                <div class="skill-name">TENSORFLOW</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-fire"></i></div>
-                <div class="skill-name">PYTORCH</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-android"></i></div>
-                <div class="skill-name">ANDROID</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                <div class="skill-name">HTML5</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                <div class="skill-name">CSS3</div>
-                <div class="skill-level">(ADVANCED)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-js"></i></div>
-                <div class="skill-name">JAVASCRIPT</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-php"></i></div>
-                <div class="skill-name">PHP</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <div class="skill-name">SQL</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-cog"></i></div>
-                <div class="skill-name">RUST</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <div class="skill-name">KOTLIN</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-cubes"></i></div>
-                <div class="skill-name">BLOCKCHAIN</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-flask"></i></div>
-                <div class="skill-name">FLASK</div>
-                <div class="skill-level">(INTERMEDIATE)</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                <div class="skill-name">GIT</div>
-                <div class="skill-level">(ADVANCED)</div>
+            <div class="project-content">
+                <h3 class="project-title">MusicCreatorAI</h3>
+                <p class="project-desc">A deep learning-based music generation application with time-stretching and pitch shifting features.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">TensorFlow</span>
+                    <span class="project-tag">PyQt5</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">EDUCATION</h2>
-        <div class="education-card">
-            <div class="education-degree">Bachelor's Degree</div>
-            <div class="education-date">2021 - 2026</div>
-            <div class="education-school">Software Development - Istanbul Aydın University</div>
-            <div class="education-language">
-                <strong>Language:</strong> English - Professional Working Proficiency
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project3.jpg" alt="Travel Guide">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Travel Guide</h3>
+                <p class="project-desc">A comprehensive travel guide app for Turkey with Google Maps, Street View integration, and weather display.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Android</span>
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">Google Maps API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Istanbul, Turkey</p>
-                <a href="tel:+905516945858">+90 551 694 58 58</a>
-                <a href="mailto:yahyakocaman28@gmail.com">yahyakocaman28@gmail.com</a>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project4.jpeg" alt="Web3 Platform">
             </div>
-            <div class="footer-section">
-                <h3>Social Media</h3>
-                <a href="https://github.com/yahyaKocaman" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yahya-kocaman-70b8b3246" target="_blank">LinkedIn</a>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="#about">About Me</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
+            <div class="project-content">
+                <h3 class="project-title">Web3 Crowdfunding Platform</h3>
+                <p class="project-desc">A blockchain-based crowdfunding platform where users can create and finance projects.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Rust</span>
+                    <span class="project-tag">Soroban SDK</span>
+                    <span class="project-tag">Blockchain</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 Yahya Kocaman - All Rights Reserved</p>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/images/Project5.png" alt="RecipeApp">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">RecipeApp</h3>
+                <p class="project-desc">An Android app that offers random recipe suggestions based on available ingredients using SQLite.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Kotlin</span>
+                    <span class="project-tag">Android</span>
+                    <span class="project-tag">SQLite</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yahyaKocaman" class="project-link" target="_blank">View Code</a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
+<!-- Skills Section -->
+<section id="skills">
+    <h2 class="section-title">SKILLS</h2>
+    <p class="skills-intro">The Skills, Tools and Technologies I am really good at:</p>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <div class="skill-name">PYTHON</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-c"></i></div>
+            <div class="skill-name">C</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+            <div class="skill-name">JAVA</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <div class="skill-name">TENSORFLOW</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+            <div class="skill-name">PYTORCH</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-android"></i></div>
+            <div class="skill-name">ANDROID</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <div class="skill-name">JAVASCRIPT</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <div class="skill-name">PHP</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-name">SQL</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cog"></i></div>
+            <div class="skill-name">RUST</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-name">KOTLIN</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+            <div class="skill-name">BLOCKCHAIN</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-flask"></i></div>
+            <div class="skill-name">FLASK</div>
+            <div class="skill-level">(INTERMEDIATE)</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <div class="skill-name">GIT</div>
+            <div class="skill-level">(ADVANCED)</div>
+        </div>
+    </div>
+</section>
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            navLinks.classList.toggle('active');
+<!-- Education Section -->
+<section id="education">
+    <h2 class="section-title">EDUCATION</h2>
+    <div class="education-card">
+        <div class="education-degree">Bachelor's Degree</div>
+        <div class="education-date">2021 - 2026</div>
+        <div class="education-school">Software Development - Istanbul Aydın University</div>
+        <div class="education-language">
+            <strong>Language:</strong> English - Professional Working Proficiency
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Istanbul, Turkey</p>
+            <a href="tel:+905516945858">+90 551 694 58 58</a>
+            <a href="mailto:yahyakocaman28@gmail.com">yahyakocaman28@gmail.com</a>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <a href="https://github.com/yahyaKocaman" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yahya-kocaman-70b8b3246" target="_blank">LinkedIn</a>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Yahya Kocaman - All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
         });
+    });
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Navbar scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 100) {
-                navbar.style.boxShadow = '0 5px 30px rgba(59, 130, 246, 0.3)';
-            } else {
-                navbar.style.boxShadow = '0 2px 20px rgba(59, 130, 246, 0.2)';
-            }
-            
-            lastScroll = currentScroll;
-        });
-
-        // Video autoplay fix for mobile
-        document.addEventListener('DOMContentLoaded', function() {
-            const video = document.querySelector('.hero-video');
-            if (video) {
-                // Try to play the video
-                const playPromise = video.play();
-                
-                if (playPromise !== undefined) {
-                    playPromise.catch(error => {
-                        // Auto-play was prevented, show fallback background
-                        console.log('Video autoplay prevented:', error);
-                        video.style.display = 'none';
-                    });
-                }
-                
-                // Ensure video plays on user interaction for mobile
-                document.addEventListener('touchstart', function() {
-                    if (video.paused) {
-                        video.play().catch(e => console.log('Play failed:', e));
-                    }
-                }, { once: true });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
         });
-    </script>
-</body>
-</html>
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.style.boxShadow = '0 5px 30px rgba(59, 130, 246, 0.3)';
+        } else {
+            navbar.style.boxShadow = '0 2px 20px rgba(59, 130, 246, 0.2)';
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Video autoplay fix for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.hero-video');
+        if (video) {
+            // Try to play the video
+            const playPromise = video.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    // Auto-play was prevented, show fallback background
+                    console.log('Video autoplay prevented:', error);
+                    video.style.display = 'none';
+                });
+            }
+            
+            // Ensure video plays on user interaction for mobile
+            document.addEventListener('touchstart', function() {
+                if (video.paused) {
+                    video.play().catch(e => console.log('Play failed:', e));
+                }
+            }, { once: true });
+        }
+    });
+        </script>
+    </body>
+    </html>
+</parameter>
