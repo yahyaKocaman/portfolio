@@ -292,14 +292,18 @@
             box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3);
             overflow: hidden;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .about-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
             display: block;
+            padding: 2rem;
         }
         
         /* Experience Section */
@@ -399,6 +403,9 @@
             background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .project-image::before {
@@ -414,9 +421,9 @@
         }
         
         .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
             object-position: center;
             display: block;
             position: relative;
@@ -807,7 +814,7 @@
     <section class="hero" id="home">
         <div class="hero-bg-fallback"></div>
         <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-            <source src="https://github.com/yahyaKocaman/portfolio/blob/main/videos/background.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/yahyaKocaman/portfolio/main/videos/background.mp4" type="video/mp4">
         </video>
         
         <div class="hero-content">
