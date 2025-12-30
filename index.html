@@ -27,25 +27,25 @@
             width: 100%;
             background: rgba(10, 14, 39, 0.98);
             backdrop-filter: blur(10px);
-            padding: 0.5rem 5%;
+            padding: 0.3rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(59, 130, 246, 0.2);
             border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-            height: 70px;
+            height: 55px;
         }
         
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.7rem;
             margin-right: auto;
         }
         
         .logo-image {
-            height: 50px;
+            height: 40px;
             width: auto;
             object-fit: contain;
             filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
@@ -57,7 +57,7 @@
         }
         
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: #fff;
             letter-spacing: -1px;
@@ -66,14 +66,14 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 1.8rem;
         }
         
         .nav-links a {
             text-decoration: none;
             color: #e0e0e0;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: color 0.3s;
             position: relative;
         }
@@ -647,12 +647,16 @@
         /* Tablet Responsive */
         @media (max-width: 1024px) {
             .navbar {
-                padding: 0.5rem 4%;
-                height: 60px;
+                padding: 0.3rem 4%;
+                height: 50px;
             }
             
             .logo-image {
-                height: 45px;
+                height: 35px;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
             }
             
             .nav-links {
@@ -675,24 +679,24 @@
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .navbar {
-                padding: 0.5rem 4%;
-                height: 60px;
+                padding: 0.3rem 4%;
+                height: 50px;
             }
             
             .logo-image {
-                height: 40px;
+                height: 32px;
             }
             
             .logo {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
             
             .nav-links {
                 position: fixed;
-                top: 60px;
+                top: 50px;
                 left: -100%;
                 width: 100%;
-                height: calc(100vh - 60px);
+                height: calc(100vh - 50px);
                 background: rgba(10, 14, 39, 0.98);
                 backdrop-filter: blur(10px);
                 flex-direction: column;
@@ -760,11 +764,11 @@
         /* Small Mobile */
         @media (max-width: 480px) {
             .logo-image {
-                height: 35px;
+                height: 28px;
             }
             
             .logo {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .about-image {
@@ -869,19 +873,20 @@
                         <div class="experience-company">OKATAN SAĞLIK ARGE</div>
                     </div>
                     <div class="experience-date">September 2024 - October 2024</div>
-                </div>
-                <ul class="experience-desc">
-                    <li>Participated in in-house software<function_calls>
+                </div
+                    <function_calls>
                     <invoke name="artifacts">
                     <parameter name="command">update</parameter>
                     <parameter name="id">artifact_1</parameter>
-                    <parameter name="old_str">                <ul class="experience-desc">
-                    <li>Participated in in-house software</parameter>
-                    <parameter name="new_str">                <ul class="experience-desc">
-                    <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
-                    </ul>
+                    <parameter name="old_str">                    <div class="experience-date">September 2024 - October 2024</div>
+                    </div</parameter>
+                    <parameter name="new_str">                    <div class="experience-date">September 2024 - October 2024</div>
                     </div>
-                        <div class="experience-card">
+                    <ul class="experience-desc">
+                    <li>Participated in in-house software development activities; gained experience in teamwork and version control.</li>
+              </ul>
+           </div>
+                <div class="experience-card">
             <div class="experience-header">
                 <div>
                     <div class="experience-title">Intern & Project Manager</div>
@@ -1195,3 +1200,4 @@
     </body>
     </html>
 </parameter>
+</invoke>
